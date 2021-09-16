@@ -32,7 +32,7 @@ fun main(args: Array<String>) {
         .forEach{ println(it) }
 }
 
-fun dfs(node: Array<IntArray>, i: Int, j: Int, visit: Array<BooleanArray>): Int {
+private fun dfs(node: Array<IntArray>, i: Int, j: Int, visit: Array<BooleanArray>): Int {
     if(i < 0 || j < 0 || i >= count || j >= count || node[i][j] == 0 || visit[i][j]) return 0
     visit[i][j] = true
 
