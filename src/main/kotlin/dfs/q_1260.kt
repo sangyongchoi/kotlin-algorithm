@@ -20,7 +20,7 @@ fun main(args: Array<String>) {
     bfs(node, start, size, visit)
 }
 
-fun dfs(node: Array<IntArray>, start: Int, size: Int, visit: BooleanArray) {
+private fun dfs(node: Array<IntArray>, start: Int, size: Int, visit: BooleanArray) {
     visit[start] = true
     print("$start ")
     for (i in 1..size) {
