@@ -48,7 +48,6 @@ private fun dfs(
 
         if (node[i][j] < node[x][y]) {
             dp[i][j] = dp[i][j].coerceAtLeast(dfs(x, y, dp, node) + 1)
-            dfs(x, y, dp, node)
         }
     }
     return dp[i][j]
